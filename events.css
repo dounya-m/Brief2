@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container li{
+    font-size: 20px;
+}
+.container a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Montserrat';
+
+}
+.container a:hover{
+    color: rgb(182, 182, 182);
+    font-size: 24px;
+}
+.signin-button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    width: 5vw;
+    height: 5vh;
+    box-shadow: 1px 1px 1px rgb(250 250 252), 1px 1px 1px rgb(0 0 0),
+      1px 1px 1px rgb(250 252 250);
+  }
+.signup-button {
+  background-color: white;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  width: 5vw;
+  height: 5vh;
+  box-shadow: 1px 1px 1px rgb(0 0 0), 1px 1px 1px rgb(255 255 255),
+    1px 8px 10px rgb(0 0 0);
+}
+.nav {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(
+178deg, black, transparent);
+    color: rgb(255, 255, 255);
+}
+.nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+img.logo {
+    width: 120px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 21px;
+    justify-content: space-between;
+    font-family:"Montserrat", sans-serif;
+    font-weight: bold;
+}
+.hero{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)),
+    url("music.jpg");    
+    background-size: cover;
+    background-position: center;
+}
+.hero >div{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    color: rgb(255, 255, 255);
+
+    
+}
+
+.hero img{
+    display: block;
+    width: 372px;
+    border: 2px solid white;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+}
+.left h1{
+    font-size: 72px;
+    margin-left: 30%;
+}
+.left p{
+    font-size: 24px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-top: 200px;
+}
+.ps{
+    margin-left: 200px;
+    
+}
+
+
+.first{
+    display: flex;
+    margin: 40px;
+    align-items: center;
+}
+
+.second{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.img2{
+    margin: 40px;
+}
+.content h2{
+    font-size: 32px;
+}
+.content p{
+    font-size: 22px;
+}
+.event{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.47), rgba(0, 0, 0, 0.47)),
+    url("women-driving.jpg");
+    background-position: center; 
+    background-size: cover;
+    text-align: center;
+}
+#par {
+    font-size: 24px;
+    width: 80%;
+    margin-top: 3%;
+}
+.event h3{
+    font-weight: normal;
+    font-size: 28px;
+}
+.event h2{
+    font-size: 72px;
+}
+.event{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-top: 5%;
+    justify-content: center;
+    
+}
+.event .element {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.map{
+    margin: 60px;
+}
+
+.footer {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    background-color: black;
+    margin: 60px 40px 0px 40px;
+    border-radius: 60px 60px 0px 0px;
+  }
+  .twitteryoutube{
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+  .copyright {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+  }
+  .facebookinsta{
+    display: flex;
+    width: 40px;
+      height: 40px;
+  }
+  
+  .lineicons {
+    align-items: center;
+    display: flex;
+    width: 15vw;
+    JUSTIFY-CONTENT: space-evenly;
+  }
+  h3{
+    font-weight: 400;
+  }
+  @media screen and (max-width: 600px){
+    .nav div {
+        flex-direction: column;
+        gap: 10px;
+     }
+   .container button{
+       display: none;
+   } 
+   .right img{
+       display: none;
+   }
+   .first{
+       flex-direction: column;
+       margin: 100%;
+   }
+   .second{
+       flex-direction: column;
+   }
+   .content{
+       gap: 10px;
+   }
+  }

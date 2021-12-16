@@ -1,0 +1,416 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("image/gif/b2.gif");
+  background-attachment: fixed;
+  width: 100vw;
+  background-position: center;
+  overflow-x: hidden;
+  background-size: 100%;
+}
+.loadergif {
+    
+  position: absolute;
+  z-index: 9999999;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  timing
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+  margin-right: 2%;
+  list-style: none;
+}
+.menu ul li a {
+  padding: 0 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+.menu ul li a:hover {
+  text-shadow: 0px 0px 0 rgb(88, 88, 88), 1px 1px 0 rgb(5, 5, 5),
+    2px 2px 0 rgb(0, 0, 0), 3px 3px 0 rgb(2, 2, 2), 4px 4px 0 rgb(231, 229, 227),
+    5px 5px 0 rgb(82, 81, 81), 6px 6px 0 rgb(14, 14, 13);
+}
+.mainlogo {
+  width: 12%;
+  height: 70%;
+  margin: 20px 20px;
+}
+
+.signin-button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  width: 5vw;
+  height: 5vh;
+  box-shadow: 1px 1px 1px rgb(250 250 252), 1px 1px 1px rgb(0 0 0),
+    1px 1px 1px rgb(250 252 250);
+}
+
+.signup-button {
+  background-color: white;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  width: 5vw;
+  height: 5vh;
+  box-shadow: 1px 1px 1px rgb(0 0 0), 1px 1px 1px rgb(255 255 255),
+    1px 8px 10px rgb(0 0 0);
+}
+
+.cantact-tittle {
+  /* color: white;
+  font-size: 100px; */
+  text-align: center;
+  padding: 30px 0px;
+  opacity: 0.2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.getintouch {
+  position: relative;
+  bottom: 164px;
+  text-align: center;
+  padding: 30px 0px;
+  height: 20%;
+}
+
+h1 {
+  color: white;
+  font-size: 145px;
+  text-shadow: 2px 2px 8px whitesmoke;
+}
+
+h2 {
+  font-weight: 800;
+  color: white;
+  font-size: 32px;
+  height: 20px;
+}
+.up {
+  left: 18rem;
+  display: flex;
+  width: 100vw;
+  position: absolute;
+  bottom: 61%;
+  z-index: 2;
+}
+p {
+  color: white;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 2;
+  padding: 0px 40px;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 5px darkblue;
+}
+
+.inputs {
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 30%;
+  bottom: 0%;
+}
+
+input:placeholder-shown {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background: transparent;
+  box-shadow: 1px 1px 1px rgb(250 250 252), 2px 3px 1px rgb(0 0 0),
+    3px 1px 1px rgb(250 252 250);
+  position: relative;
+  color: white;
+  padding: 10px;
+}
+::placeholder {
+  color: rgb(250, 250, 250);
+  font-size: 15px;
+}
+
+.input-parts {
+  width: 20vw;
+  height: 6vh;
+  color: rgb(5, 3, 145);
+}
+.input-phone {
+  width: 40vw;
+  height: 6vh;
+}
+.input-message {
+  width: 40vw;
+  height: 15vh;
+}
+.submit {
+  position: relative;
+  height: 10vh;
+  width: 10vw;
+}
+.contactbutton {
+  position: relative;
+  font-weight: 500;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-radius: 40px;
+  width: 7vw;
+  height: 6vh;
+  font-size: 14px;
+  box-shadow: 1px 1px 1px rgb(0 0 0), 1px 1px 1px rgb(255 255 255),
+    1px 8px 10px rgb(0 0 0);
+  left: 22em;
+}
+.contactbutton:hover {
+  box-shadow: 1px 1px 1px rgb(0 0 0), 1px 1px 1px rgb(255 255 255),
+    1px 8px 10px white;
+  left: 22em;
+}
+footer {
+  position: absolute;
+  bottom: 5em;
+}
+.footer {
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  position: fixed;
+}
+
+.twitteryoutube {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+.copyright {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  justify-content: center;
+}
+.facebookinsta {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+
+.lineicons {
+  align-items: center;
+  display: flex;
+  width: 15vw;
+  justify-content: space-evenly;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 780px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .getintouch {
+    position: relative;
+    bottom: 114px;
+    text-align: center;
+    padding: 30px 0px;
+    height: 20%;
+  }
+  .mainlogo {
+    width: 12vw;
+    height: 10vh;
+    margin: 20px 20px;
+  }
+  .twitteryoutube,
+  .facebookinsta {
+    width: 28px;
+  }
+  .copyright {
+    font-size: 8px;
+  }
+  .footer {
+    width: 90%;
+    left: 12%;
+    top: 20em;
+    position: relative;
+  }
+  .up {
+    left: 4rem;
+    top: 31%;
+    text-align: center;
+  }
+  p {
+    font-size: 10px;
+  }
+  .contactbutton {
+    width: 19vw;
+    height: 5vh;
+    font-size: 10px;
+    left: 14em;
+  }
+  .inputs {
+    width: 100vw;
+    left: 5%;
+  }
+  .input-parts {
+    width: 49vw;
+    height: 6vh;
+  }
+  .input-phone {
+    width: 100vw;
+    height: 6vh;
+  }
+  .input-message {
+    width: 100vw;
+    height: 15vh;
+  }
+}
+
+#check {
+  display: none;
+}
+.click-menu img {
+  height: 3em;
+  display: none;
+}
+.click-menu img:hover {
+  transform: rotateZ(-30deg)
+}
+@media screen and (max-width: 600px) {
+  #check:checked ~ ul {
+    left: 2.5% !important;
+    width: 95vw !important;
+    height: 102vh !important;
+    padding-top: 60%;
+  }
+  .menu {
+    padding: 40px;
+  }
+  ul {
+    position: absolute;
+    z-index: 9999;
+    flex-direction: column;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    background: #000;
+    border-radius: 50px;
+  }
+  ul li {
+    padding: 0;
+  }
+  .signin-button, .signup-button{
+    width: 18vw;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+    width: 90vw;
+    height: 74vh;
+    padding: 20px 0px;
+  }
+  .click-menu img {
+    display: block;
+    width: 11vw;
+    height: 7vh;
+    box-shadow: 0px 0px 1px rgb(250 250 252), 0px 0px 1px rgb(0 0 0),
+      0px 0px 4px rgb(250 252 250);
+    border-radius: 50%;
+  }
+  .mainlogo {
+    height: 10vh;
+    margin: 0px;
+  }
+  .footer {
+    width: 90%;
+    right: 5%;
+  }
+  .cantact-tittle {
+    text-align: center;
+    padding: 10px 0px;
+    opacity: 0.2;
+    font-size: 10px;
+  }
+  .getintouch {
+    padding: 17% 0%;
+  }
+  p {
+    font-size: 10px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .up {
+    left: 0rem;
+    top: 48%;
+  }
+  .contactbutton {
+    width: 24vw;
+    height: 5vh;
+    font-size: 10px;
+    left: 11em;
+  }
+  .inputs {
+    width: 90vw;
+    left: 10%;
+  }
+  .input-parts {
+    width: 39vw;
+    height: 6vh;
+  }
+  .input-phone {
+    width: 80vw;
+    height: 6vh;
+  }
+  .input-message {
+    width: 80vw;
+    height: 15vh;
+  }
+}

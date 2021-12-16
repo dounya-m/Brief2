@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>HireFire</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- style css -->
+    <link rel="stylesheet" href="Booking.css" />
+    <!--javascript style-->
+    <script src="script.js"></script>
+    <!-- Responsive-->
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+</html>
+
+<body onload="loader()">
+  <!-- loader  -->
+  <div class="loadergif">
+    <img src="image/loader.gif" alt="#" />
+  </div>
+  <!-- end loader -->
+  <!-- header-->
+  <header>
+    <nav>
+      <div class="menu">
+        <a href="index.html"
+          ><img src="image/WebSiteLogo.png" class="mainlogo" alt="#"
+        /></a>
+        <input type="checkbox" id="check" />
+            <label for="check" class="click-menu">
+              <img src="image/menu.png" alt="" />
+          </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <button
+              onclick="document.location='Singin.html'"
+              class="signin-button"
+            >
+              Sign In
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="document.location='Singup.html'"
+              class="signup-button"
+            >
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- end header-->
+  <div style="height: 100vh;">
+  <h1>Type de véhicule</h1>
+
+    <div class="type">
+        <img class="slide" id="moto" src="image/nicemoto.jpg" alt="motorcycle" onclick="choix(this.id)">
+        <img class="slide" id="compact" src="image/nicecompact.jpg" alt="compact-car" onclick="choix(this.id)">
+        <img class="slide" id="citadine" src="image/nicecitadin.jpg" alt="citadine-car" onclick="choix(this.id)">
+        <img class="slide" id="utilitaire" src="image/niceutility.jpg" alt="utilitaire-car" onclick="choix(this.id)">
+        <img class="slide" id="berlin" src="image/niceberline.jpg" alt="berlin-car" onclick="choix(this.id)">
+        <img class="slide" id="truck" src="image/nicetruck.jpg" alt="truck" onclick="choix(this.id)">
+        <img class="slide" id="cm" src="image/nicemachine.jpg" alt="construction-machine" onclick="choix(this.id)">
+    </div>
+
+    <!------------------------feul------------------------>
+
+    <h1>Select your fuel type</h1>
+    <form class="feul">
+      <div class="carburant">
+          <input type="radio" id="essence" name="radio" value="0.14" onclick="fuelP(this.value)">
+          <label for="essence">Essence</label>
+      </div>
+      <div class="carburant">
+          <input type="radio" id="diesel" name="radio" value="0.21" onclick="fuelP(this.value)">
+          <label for="diesel">Diesel</label>
+      </div>
+      <div class="carburant">
+          <input type="radio" id="electrique" name="radio" value="0.05" onclick="fuelP(this.value)">
+          <label for="electrique">Electrique</label>
+      </div>
+      <div class="carburant">
+          <input type="radio" id="hybride" name="radio" value="0.09" onclick="fuelP(this.value)">
+          <label for="hybride">Hybride</label>
+      </div>
+  </form>
+
+    <!-----------------------gear box----------------------->
+
+    <h1>Select your gear box type</h1>
+    <form class="gear-box">
+        <div class="gear" id="manual1">
+            <input type="radio" id="manual" name="gear" value="manual">
+            <label for="manual">Manual</label>
+        </div>
+        <div class="gear" id="automatic1">
+            <input type="radio" id="automatic" name="gear" value="automatic">
+            <label for="automatic">Automatic</label>
+        </div>
+    </form>
+
+    <!-----------------------Reservation duration----------------------->
+    <h1>Reservation duration</h1>
+    <form class="duration">
+        <label for="date">Duration :</label>
+        <input type="number" min="1" id="date" name="date">
+      </form>
+      <div class="submit-1">
+        <input type="submit" name="" value="Submit" onclick="calc()" class="submit">
+    </div>
+    </div>
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+      <div class="lineicons">
+        <img src="image/twitterIcon.png" class="twitteryoutube" />
+        <img src="image/youtubeIcon.png" class="twitteryoutube" />
+      </div>
+      <div class="copyright">
+        <h3>Copyright © 2021 HireFire. All rights reserved.</h3>
+        <h3>Email : saidessalami0@gmail.com</h3>
+        <h3>Phone : +212645071218</h3>
+      </div>
+      <div class="lineicons">
+        <img src="image/facebookIcon.png" class="facebookinsta" />
+        <img src="image/instagram.png" class="facebookinsta" />
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+</body>

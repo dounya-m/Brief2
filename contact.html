@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>HireFire</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- style css -->
+    <link rel="stylesheet" href="contact.css" />
+    <!--javascript style-->
+    <script src="script.js"></script>
+    <!-- Responsive-->
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- javascript link-->
+    <script src="script.js"></script>
+  </head>
+</html>
+
+<body onload="loader()">
+  <!-- loader  -->
+  <div class="loadergif">
+    <img src="image/loader.gif" alt="#" />
+  </div>
+  <!-- end loader -->
+  <!-- header-->
+  <header>
+    <nav>
+      <div class="menu">
+        <a href="index.html"> <img src="image/WebSiteLogo.png" class="mainlogo" alt="#"/></a>
+        <input type="checkbox" id="check" />
+            <label for="check" class="click-menu">
+              <img src="image/menu.png" alt="" />
+          </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <button
+              onclick="document.location='Singin.html'"
+              class="signin-button"
+            >
+              Sign In
+            </button>
+          </li>
+          <li>
+            <button
+              onclick="document.location='Singup.html'"
+              class="signup-button"
+            >
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- end header-->
+  <section class="container">
+      <div class="cantact-tittle">
+        <h1>CONTACT</h1>
+      </div>
+      <div class="getintouch">
+        <h2>GETTING IN TOUCH IS EASY</h2>
+      </div>
+    </div>
+      <form class="inputs" onsubmit="return info()">
+            <input class="input-parts" type="text" name="Username" id="Username" placeholder="Username" autocomplete="off">
+            <input class="input-parts" type="email" name="E_Mail" id="E_Mail" placeholder="E-Mail"><br><br>
+            <input class="input-phone" type="number" name="Phone_Number" id="Phone_Number" placeholder="Phone Number" maxlenght="8"><br><br>
+            <input class="input-phone" type="text" name="Sujet" id="Sujet" placeholder="Sujet" maxlenght="8"><br><br>
+            <input class="input-message" type="text" name="Message" id="Message" placeholder="Text" maxlenght="8"><br><br>
+            <input class="contactbutton" type="button" value="Send Message" onclick="validation_contact()">
+      </form>
+      <div class="up">
+        <p>FEEL FREE TO GET IN TOUCH WITH US, WE ARE ALWAYS OPEN
+            TO DISCUSSION NEW PEOJECTS CEATIVE IDEAS OPPORTUNITIES
+        TO BE PART OF YOUR VISIONS  </p>
+      </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+      <div class="lineicons">
+        <img src="image/twitterIcon.png" class="twitteryoutube" />
+        <img src="image/youtubeIcon.png" class="twitteryoutube" />
+      </div>
+      <div class="copyright">
+        <h3>Copyright © 2021 HireFire. All rights reserved.</h3>
+        <h3>Email : saidessalami0@gmail.com</h3>
+        <h3>Phone : +212645071218</h3>
+      </div>
+      <div class="lineicons">
+        <img src="image/facebookIcon.png" class="facebookinsta" />
+        <img src="image/instagram.png" class="facebookinsta" />
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+</body>
